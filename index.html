@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Siti Nabila — Mahasiswi Informatika Unjani, Web Developer & ML Enthusiast">
+  <title>Siti Nabila — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =================== NAV =================== -->
+<nav>
+  <div class="nav-logo">Siti<span>Nabila</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">tentang</a></li>
+    <li><a href="#skills">keahlian</a></li>
+    <li><a href="#projects">proyek</a></li>
+    <li><a href="#experience">pengalaman</a></li>
+    <li><a href="#education">pendidikan</a></li>
+    <li><a href="#contact">kontak</a></li>
+  </ul>
+  <a href="https://github.com/nabilaasn" target="_blank" rel="noopener" class="nav-btn">GitHub ↗</a>
+</nav>
+
+<!-- =================== HERO =================== -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="hero-grid">
+    <!-- LEFT: TEXT -->
+    <div>
+      <div class="hero-badge hero-anim">
+        <span class="badge-dot"></span>
+        Terbuka untuk magang &amp; kolaborasi
+      </div>
+
+      <h1 class="hero-anim">
+        Halo, saya<br>
+        <span class="name">Siti Nabila</span>
+      </h1>
+
+      <p class="hero-role hero-anim">
+        ◈ Mahasiswi Informatika · Web Developer · ML Enthusiast
+      </p>
+
+      <p class="hero-desc hero-anim">
+        Mahasiswi aktif semester 6 di <strong>Universitas Jenderal Achmad Yani</strong> dengan
+        ketertarikan pada pengolahan data, pengembangan sistem, dan teknologi informasi.
+        Disiplin, suka belajar hal baru, dan senang bekerja dalam tim.
+      </p>
+
+      <div class="hero-cta hero-anim">
+        <a href="#projects" class="btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+
+      <div class="hero-contacts hero-anim">
+        <a href="tel:081224056730" class="hero-contact-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.66A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          081224056730
+        </a>
+        <a href="mailto:nabilaaasn135@gmail.com" class="hero-contact-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          nabilaaasn135@gmail.com
+        </a>
+        <a href="#" class="hero-contact-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Sumedang / Cimahi
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: PHOTO -->
+    <div class="photo-card hero-anim">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <!-- Ganti src menjadi path foto kamu, contoh: assets/img/foto.jpg -->
+          <img src="assets/img/profile.jpeg" alt="Foto Siti Nabila" 
+               onerror="this.classList.add('hidden'); this.nextElementSibling.style.display='block'"
+               class="hidden" id="hero-photo">
+          <span class="photo-placeholder-icon" id="photo-placeholder">👩‍💻</span>
+        <div class="card-tag card-tag-1">✦ Informatika '23</div>
+        <div class="card-tag card-tag-2">Unjani · Cimahi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== ABOUT =================== -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// tentang saya</div>
+    <div class="section-title">Siapa Saya?</div>
+    <div class="section-bar"></div>
+
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p>
+          Saya <strong>Siti Nabila</strong>, mahasiswi aktif jurusan <strong>Teknik Informatika semester 6</strong>
+          di Universitas Jenderal Achmad Yani, Cimahi. Saya memiliki ketertarikan dalam bidang
+          teknologi informasi, khususnya <strong>pengolahan data</strong> dan <strong>pengembangan sistem berbasis web</strong>.
+        </p>
+        <p>
+          Terbiasa menggunakan <strong>Java, JavaScript, dan PHP</strong> dengan framework
+          <strong>Node.js dan Laravel</strong>. Saya juga aktif di organisasi kemahasiswaan dan memiliki
+          pengalaman magang mandiri langsung di lingkungan rumah sakit, yang membangun kemampuan
+          analisis kebutuhan dan koordinasi tim secara nyata.
+        </p>
+        <p>
+          Dikenal sebagai pribadi yang <strong>disiplin, komunikatif</strong>, dan memiliki
+          <strong>semangat belajar yang tinggi</strong>. Senang menghadapi tantangan baru dan
+          berkontribusi dalam tim yang solid.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box fade-up">
+          <div class="stat-num">6</div>
+          <div class="stat-label">Semester aktif</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Tahun coding</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Org. aktif</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Pengalaman magang</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== SKILLS =================== -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// keahlian</div>
+    <div class="section-title">Tech Stack &amp; Tools</div>
+    <div class="section-bar"></div>
+
+    <div class="skills-groups">
+
+      <div class="fade-up">
+        <div class="skill-group-label">Bahasa Pemrograman</div>
+        <div class="chips">
+          <div class="chip"><span class="chip-dot" style="background:#b07219"></span>Java</div>
+          <div class="chip"><span class="chip-dot" style="background:#f1e05a"></span>JavaScript</div>
+          <div class="chip"><span class="chip-dot" style="background:#777bb4"></span>PHP</div>
+          <div class="chip"><span class="chip-dot" style="background:#e34c26"></span>HTML</div>
+          <div class="chip"><span class="chip-dot" style="background:#563d7c"></span>CSS</div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="skill-group-label">Framework &amp; Library</div>
+        <div class="chips">
+          <div class="chip"><span class="chip-dot" style="background:#68a063"></span>Node.js</div>
+          <div class="chip"><span class="chip-dot" style="background:#ff2d20"></span>Laravel</div>
+          <div class="chip"><span class="chip-dot" style="background:#7952b3"></span>Bootstrap</div>
+          <div class="chip"><span class="chip-dot" style="background:#e34c26"></span>CodeIgniter</div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="skill-group-label">Database</div>
+        <div class="chips">
+          <div class="chip"><span class="chip-dot" style="background:#4479A1"></span>MySQL</div>
+          <div class="chip"><span class="chip-dot" style="background:#336791"></span>SQL Dasar</div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="skill-group-label">Tools &amp; Platform</div>
+        <div class="chips">
+          <div class="chip"><span class="chip-dot" style="background:#007acc"></span>VS Code</div>
+          <div class="chip"><span class="chip-dot" style="background:#f90"></span>XAMPP</div>
+          <div class="chip"><span class="chip-dot" style="background:#ff6c37"></span>Postman</div>
+          <div class="chip"><span class="chip-dot" style="background:#f05032"></span>Git &amp; GitHub</div>
+          <div class="chip"><span class="chip-dot" style="background:#0f9d58"></span>Google Workspace</div>
+          <div class="chip"><span class="chip-dot" style="background:#d83b01"></span>Microsoft Office</div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="skill-group-label">Soft Skills</div>
+        <div class="chips">
+          <div class="chip">📋 Pengelolaan dokumen &amp; data</div>
+          <div class="chip">⏰ Manajemen waktu</div>
+          <div class="chip">🤝 Kerja tim &amp; komunikasi</div>
+          <div class="chip">📐 Analisis kebutuhan</div>
+          <div class="chip">📊 Laporan keuangan organisasi</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== PROJECTS =================== -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// proyek</div>
+    <div class="section-title">Proyek GitHub</div>
+    <div class="section-bar"></div>
+
+    <div class="projects-meta">
+      <p style="font-size:0.85rem;color:var(--muted2)">
+        Diambil otomatis dari
+        <a href="https://github.com/nabilaasn" target="_blank" rel="noopener"
+           style="color:var(--accent2);text-decoration:none">github.com/nabilaasn</a>
+      </p>
+      <a href="https://github.com/nabilaasn" target="_blank" rel="noopener" class="github-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        Lihat Semua Repo
+      </a>
+    </div>
+
+    <!-- Diisi otomatis oleh main.js -->
+    <div class="projects-grid" id="projects-grid">
+      <div class="projects-loading">
+        <div class="spinner"></div><br>
+        Memuat proyek...
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== EXPERIENCE =================== -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// pengalaman</div>
+    <div class="section-title">Pengalaman</div>
+    <div class="section-bar"></div>
+
+    <div class="exp-section">
+
+      <!-- MAGANG -->
+      <div class="exp-group-label">Magang</div>
+
+      <div class="exp-card fade-up">
+        <div class="exp-header">
+          <div class="exp-title">🏥 Magang Mandiri — SIMRS</div>
+          <div class="exp-period">Jul 2025 – Agu 2025</div>
+        </div>
+        <div class="exp-org">Rumah Sakit Umum Daerah Sumedang</div>
+        <ul class="exp-points">
+          <li>Membuat prototype aplikasi internal berbasis Android untuk pengelolaan perangkat pada SIMRS (Sistem Informasi Manajemen Rumah Sakit)</li>
+          <li>Membantu pengelolaan dan penginputan data perangkat berbasis sistem</li>
+          <li>Melakukan analisis kebutuhan sederhana untuk pengembangan aplikasi internal</li>
+          <li>Berkoordinasi dengan tim dalam memastikan sistem sesuai kebutuhan operasional</li>
+        </ul>
+      </div>
+
+      <!-- ORGANISASI -->
+      <div class="exp-group-label">Organisasi</div>
+
+      <div class="exp-card fade-up">
+        <div class="exp-header">
+          <div class="exp-title">💼 Bendahara 2</div>
+          <div class="exp-period">Okt 2025 – Okt 2026</div>
+        </div>
+        <div class="exp-org">Himpunan Mahasiswa KMJ Informatika — HIMA IF UNJANI</div>
+        <ul class="exp-points">
+          <li>Membantu pengelolaan keuangan organisasi secara transparan dan akuntabel</li>
+          <li>Melakukan pencatatan pemasukan dan pengeluaran dana kegiatan</li>
+          <li>Menyusun laporan keuangan secara berkala untuk setiap program kerja</li>
+          <li>Berkoordinasi terkait kebutuhan anggaran kegiatan himpunan</li>
+        </ul>
+      </div>
+
+      <div class="exp-card fade-up">
+        <div class="exp-header">
+          <div class="exp-title">🎓 Staff PSDMO</div>
+          <div class="exp-period">Feb 2025 – Feb 2026</div>
+        </div>
+        <div class="exp-org">BEM KM FSI — Universitas Jenderal Achmad Yani</div>
+        <ul class="exp-points">
+          <li>Bertanggung jawab dalam maintaining, monitoring, dan upgrading kepengurusan BEM KM FSI UNJANI</li>
+          <li>Berkoordinasi dengan himpunan-himpunan terkait dalam ranah kaderisasi, minat, dan bakat mahasiswa</li>
+          <li>Mendukung pelaksanaan program kerja pengembangan sumber daya mahasiswa</li>
+          <li>Mengelola dan mengevaluasi kegiatan organisasi untuk meningkatkan kualitas kepengurusan</li>
+        </ul>
+      </div>
+
+      <!-- KEPANITIAAN -->
+      <div class="exp-group-label">Kepanitiaan</div>
+
+      <div class="exp-card fade-up">
+        <div class="exp-header">
+          <div class="exp-title">💰 Bendahara 1 &amp; Bendahara 2</div>
+          <div class="exp-period">Berbagai Kegiatan</div>
+        </div>
+        <div class="exp-org">Kepanitiaan Kegiatan Mahasiswa — UNJANI / FSI</div>
+        <ul class="exp-points">
+          <li>Menjabat sebagai Bendahara 1 dan Bendahara 2 dalam berbagai kepanitiaan kegiatan mahasiswa</li>
+          <li>Mengelola anggaran kegiatan mulai dari perencanaan hingga pertanggungjawaban keuangan</li>
+          <li>Menyusun laporan keuangan kegiatan yang transparan dan akuntabel</li>
+          <li>Berkoordinasi dengan pihak sponsor, panitia inti, dan divisi lain terkait kebutuhan anggaran</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== EDUCATION =================== -->
+<section id="education">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// pendidikan</div>
+    <div class="section-title">Latar Belakang Pendidikan</div>
+    <div class="section-bar"></div>
+
+    <div class="edu-grid">
+      <div class="edu-card fade-up">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">S1 Teknik Informatika</div>
+        <div class="edu-school">Universitas Jenderal Achmad Yani (Unjani), Cimahi</div>
+        <div class="edu-period">2023 — Sekarang (Semester 6)</div>
+      </div>
+      <div class="edu-card fade-up">
+        <div class="edu-icon">🏫</div>
+        <div class="edu-degree">SMA — Jurusan MIPA</div>
+        <div class="edu-school">SMA Negeri Tanjungsari, Sumedang</div>
+        <div class="edu-period">2020 — 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- =================== CONTACT =================== -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-eyebrow">// kontak</div>
+    <div class="section-title">Ayo Terhubung</div>
+    <div class="section-bar"></div>
+
+    <div class="contact-wrapper fade-up">
+      <div>
+        <div class="contact-main-title">
+          Punya proyek atau<br><span>kolaborasi</span> menarik?
+        </div>
+        <p class="contact-desc">
+          Saya terbuka untuk kesempatan magang, proyek kolaborasi, atau diskusi seputar
+          teknologi dan pengembangan sistem. Jangan ragu untuk menghubungi saya!
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="tel:081224056730" class="contact-link">
+          <div class="cl-icon-box" style="background:rgba(52,211,153,0.12)">📞</div>
+          <div class="cl-text">
+            <span class="cl-label">Telepon / WhatsApp</span>
+            <span class="cl-value">081224056730</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+
+        <a href="mailto:nabilaaasn135@gmail.com" class="contact-link">
+          <div class="cl-icon-box" style="background:rgba(244,114,182,0.12)">📧</div>
+          <div class="cl-text">
+            <span class="cl-label">Email</span>
+            <span class="cl-value">nabilaaasn135@gmail.com</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/nabilaasn" target="_blank" rel="noopener" class="contact-link">
+          <div class="cl-icon-box" style="background:rgba(108,99,255,0.12)">💻</div>
+          <div class="cl-text">
+            <span class="cl-label">GitHub</span>
+            <span class="cl-value">github.com/nabilaasn</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+
+        <a href="https://linkedin.com/in/siti-nabila" target="_blank" rel="noopener" class="contact-link">
+          <div class="cl-icon-box" style="background:rgba(52,211,153,0.12)">🔗</div>
+          <div class="cl-text">
+            <span class="cl-label">LinkedIn</span>
+            <span class="cl-value">linkedin.com/in/nabilaasn</span>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <div class="footer-logo">Siti<span>Nabila</span></div>
+  <div>Teknik Informatika · Universitas Jenderal Achmad Yani · 2025</div>
+  <div>Dibuat dengan ❤️ dari Cimahi</div>
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+<!-- Photo load handler -->
+<script>
+  const img = document.getElementById('hero-photo');
+  const placeholder = document.getElementById('photo-placeholder');
+  if (img) {
+    img.onload = function() {
+      img.classList.remove('hidden');
+      if (placeholder) placeholder.style.display = 'none';
+      const txt = img.nextElementSibling;
+      if (txt && txt.classList.contains('photo-placeholder-text')) txt.style.display = 'none';
+    };
+    img.onerror = function() {
+      img.style.display = 'none';
+    };
+    // Trigger if already cached
+    if (img.complete && img.naturalWidth) img.onload();
+  }
+</script>
+</body>
+</html>
